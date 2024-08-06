@@ -1,18 +1,24 @@
-## Getting Started
+## Exercise 4: JDBC API CRUD Implementation and Demonstration
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objectives:
+•	Perform CRUD (Create, Read, Update, Delete) operations using JDBC API.
 
-## Folder Structure
+## Business Scenario: 
+You are tasked with implementing a full-featured employee management system that allows adding, updating, deleting, and retrieving employee records.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Tasks:
+1.	Create Employee:
+•	In the EmployeeDataRetrieval class, implement a method addEmployee(String name, String position, double salary) that inserts a new employee record into the employees table.
+•	Use a PreparedStatement for this operation.
+2.	Update Employee:
+•	Implement a method updateEmployee(int id, String name, String position, double salary) that updates an existing employee record based on the id.
+•	Use a PreparedStatement for this operation.
+3.	Delete Employee:
+•	Implement a method deleteEmployee(int id) that deletes an employee record based on the id.
+•	Use a PreparedStatement for this operation.
+4.	Demonstrate CRUD Operations:
+•	Write a main method that demonstrates the CRUD operations:
+	Add a few employee records.
+	Update an employee record.
+	Delete an employee record.
+	Retrieve and display all employee records.
