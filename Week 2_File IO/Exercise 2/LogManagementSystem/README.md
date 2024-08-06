@@ -1,18 +1,31 @@
-## Getting Started
+## Exercise 2: Advanced File Handling with Error Handling
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objectives:
+•	Handle errors and exceptions during file operations.
+•	Implement robust file handling in Java.
 
-## Folder Structure
+## Business Scenario: 
+You are developing a log management system for an application. The system should be able to write log messages to a file and read log messages from the file, with proper error handling for file operations.
 
-The workspace contains two folders by default, where:
+Tasks:
+1.	Setup:
+•	Create a new Java project named LogManagementSystem.
+2.	Writing Logs to a File:
+•	Create a class named LogWriter.
+•	Write a method writeLog(String fileName, String logMessage) that:
+	Takes a file name and a log message as parameters.
+	Uses FileWriter and BufferedWriter to append the log message to the specified file.
+	Implements error handling using try-catch blocks to handle IOException.
+3.	Reading Logs from a File:
+•	Create a class named LogReader.
+•	Write a method readLogs(String fileName) that:
+	Takes a file name as a parameter.
+	Uses FileReader and BufferedReader to read the content of the file line by line.
+	Implements error handling using try-catch blocks to handle FileNotFoundException and IOException.
+4.	User Interaction:
+•	Create a class named LogApp.
+•	Write a main method that:
+	Writes multiple log messages to a file using LogWriter.
+	Reads the log messages from the file using LogReader and displays them.
+	Demonstrates the error handling by attempting to read from a non-existent file.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
