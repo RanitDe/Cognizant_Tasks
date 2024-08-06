@@ -1,18 +1,28 @@
-## Getting Started
+## Exercise 1: Basic File Reading and Writing
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objectives:
+•	Learn how to read from and write to files using Java.
+•	Understand basic file operations.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Business Scenario: 
+You are developing a simple note-taking application where users can save their notes to a file and read them back when needed.
+Tasks:
+1.	Setup:
+•	Create a new Java project named NoteTakingApp.
+2.	Writing to a File:
+•	Create a class named FileWriterDemo.
+•	Write a method saveNoteToFile(String fileName, String note) that:
+	Takes a file name and a note as parameters.
+	Uses FileWriter and BufferedWriter to write the note to the specified file.
+3.	Reading from a File:
+•	Create a class named FileReaderDemo.
+•	Write a method readNoteFromFile(String fileName) that:
+	Takes a file name as a parameter.
+	Uses FileReader and BufferedReader to read the content of the file and print it to the console.
+4.	User Interaction:
+•	Create a class named NoteApp.
+•	Write a main method that:
+	Prompts the user to enter a note.
+	Saves the note to a file using FileWriterDemo.
+	Reads the note back from the file using FileReaderDemo and displays it.
+![image](https://github.com/user-attachments/assets/aa1774e5-8b03-4056-ad32-e78c3063f869)
