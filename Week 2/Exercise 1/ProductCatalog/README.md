@@ -3,7 +3,8 @@
 ## Objectives:
 •	Understand and use the Set interface and HashSet class.
 •	Add, remove, and search for elements in a HashSet.
-Business Scenario: 
+
+## Business Scenario: 
 You are developing a product catalog for an online store. The catalog should store unique product names and provide functionality to add, remove, and search for products.
 Tasks:
 1.	Create a New Java Project:
