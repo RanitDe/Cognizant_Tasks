@@ -1,18 +1,24 @@
-## Getting Started
+## Exercise 9: Contact Management with Hashtable
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objectives:
+•	Understand and use the Hashtable class.
+•	Perform thread-safe operations on a key-value pair collection.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Business Scenario: 
+You are building a contact management system to store and manage contact information for a company. Each contact has a unique ID and associated details.
+Tasks:
+1.	Create a New Java Project:
+•	Create a new Java project named ContactManagement.
+2.	Create a Contact Class:
+•	In the ContactManagement project, create a class named Contact with attributes id (int), name (String), and phoneNumber (String).
+3.	Create a ContactManagement Class:
+•	Create a class named ContactManagement with a Hashtable<Integer, Contact> to store contacts.
+4.	Add Contacts:
+•	Implement a method addContact(Contact contact) to add a contact to the system.
+5.	Remove Contacts:
+•	Implement a method removeContact(int contactId) to remove a contact by its ID.
+6.	Display Contacts:
+•	Implement a method displayContacts() to display all contacts in the system.
+7.	Testing:
+•	Create a main class ContactManagementTest with a main method.
+•	Add, remove, and display contacts using the ContactManagement class.
