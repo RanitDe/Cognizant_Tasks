@@ -1,18 +1,34 @@
-## Getting Started
+## Exercise 3: File Handling with Serialization
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objectives:
+•	Learn how to serialize and deserialize objects to and from files.
+•	Understand the use of ObjectInputStream and ObjectOutputStream.
 
-## Folder Structure
+## Business Scenario: 
+You are developing a contact management system where contact details can be saved to a file and read back using serialization.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Tasks:
+1.	Setup:
+•	Create a new Java project named ContactManagementSystem.
+2.	Defining the Contact Class:
+•	Create a class named Contact that implements Serializable.
+•	Define attributes for contact details like name, phone, and email.
+•	Provide a constructor and appropriate getter and setter methods.
+3.	Serializing Contacts:
+•	Create a class named ContactWriter.
+•	Write a method saveContact(String fileName, Contact contact) that:
+	Takes a file name and a Contact object as parameters.
+	Uses ObjectOutputStream to write the Contact object to the specified file.
+	Implements error handling using try-catch blocks to handle IOException.
+4.	Deserializing Contacts:
+•	Create a class named ContactReader.
+•	Write a method readContact(String fileName) that:
+	Takes a file name as a parameter.
+	Uses ObjectInputStream to read the Contact object from the file.
+	Implements error handling using try-catch blocks to handle FileNotFoundException, IOException, and ClassNotFoundException.
+5.	User Interaction:
+•	Create a class named ContactApp.
+•	Write a main method that:
+	Creates a Contact object and saves it to a file using ContactWriter.
+	Reads the Contact object back from the file using ContactReader and displays the contact details.
+	Demonstrates the error handling by attempting to read from a non-existent file and handling class casting issues.
