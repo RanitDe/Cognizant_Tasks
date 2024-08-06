@@ -25,4 +25,4 @@ Tasks:
 	Prompts the user to enter a note.
 	Saves the note to a file using FileWriterDemo.
 	Reads the note back from the file using FileReaderDemo and displays it.
-![image](https://github.com/user-attachments/assets/aa1774e5-8b03-4056-ad32-e78c3063f869)
+
