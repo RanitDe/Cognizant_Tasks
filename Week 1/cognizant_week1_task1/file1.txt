@@ -1,0 +1,2 @@
+Hello, this is my first file.
+Adding more content to file1.txt.
